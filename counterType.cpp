@@ -1,4 +1,4 @@
-// counterType.h, the specification file for the class counterType
+// counterType.cpp, the implementation file for the class counterType
 //
 
 // Benjamin Hertzler
@@ -17,7 +17,7 @@
 void counterType::setCount(int c)
 {
 	counter = c;
-	validateInvariant;
+	validateInvariant();
 }
 
 int counterType::getCount() const
@@ -33,7 +33,7 @@ void counterType::increment()
 void counterType::decrement()
 {
 	counter -= 1;
-	validateInvariant;
+	validateInvariant();
 }
 
 void counterType::reset()
@@ -54,7 +54,7 @@ counterType::counterType()
 counterType::counterType(int c)
 {
 	counter = c;
-	validateInvariant;
+	validateInvariant();
 }
 
 // Private Member Functions
